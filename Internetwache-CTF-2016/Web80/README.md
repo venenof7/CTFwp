@@ -1,14 +1,14 @@
-Veneno发表于 2016-02-22   |   分类于 CTF   |   暂无评论
- QQ截图20160221115130.jpg
-打开链接看一下：
-QQ截图20160221011511.jpg
-
-都不用多看，一看就是Git泄露= =，但是githack那个不太好用，给下工具链接：传送门
-QQ截图20160221005652.jpg
-得到git源码，但是这个时候翻遍了所有的文件，发现并没有flag= =，然后乐师傅提醒说要回滚，这个脑洞简直了= =，那些年份也是有用的。。。
-在Git中，用HEAD表示当前版本，也就是最新的，上一个版本就是HEAD^，于是跳到以前的版本：
-![image](https://github.com/Veneno0/CTFwp/blob/master/Internetwache-CTF-2016/Web80/sd6.jpg)
-1
+![image](https://github.com/Veneno0/CTFwp/blob/master/Internetwache-CTF-2016/Web80/2885962034.jpg)
+Clicking on the link
+![image](https://github.com/Veneno0/CTFwp/blob/master/Internetwache-CTF-2016/Web80/2563772299.jpg)
+We will find the hint is git
+use the tool https://github.com/denny0223/scrabble
+![image](https://github.com/Veneno0/CTFwp/blob/master/Internetwache-CTF-2016/Web80/1732830763.jpg)
+We get .git , but we cannot find the flag , of courese , on the link , we will find another hint——————years，we also know the git head，so I use this command：
+```java  
+   
 $ git reset --hard HEAD^
-然后跳了一次就找到了flag。
-
+   
+```
+OK，find the flag.
+![image](https://github.com/Veneno0/CTFwp/blob/master/Internetwache-CTF-2016/Web80/3775518615.jpg)

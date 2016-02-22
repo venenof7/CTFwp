@@ -7,7 +7,7 @@ QQ截图20160221011511.jpg
 QQ截图20160221005652.jpg
 得到git源码，但是这个时候翻遍了所有的文件，发现并没有flag= =，然后乐师傅提醒说要回滚，这个脑洞简直了= =，那些年份也是有用的。。。
 在Git中，用HEAD表示当前版本，也就是最新的，上一个版本就是HEAD^，于是跳到以前的版本：
-![image](https://github.com/xxxx.jpg)
+![image](https://github.com/Veneno0/CTFwp/blob/master/Internetwache-CTF-2016/Web80/sd6.jpg)
 1
 $ git reset --hard HEAD^
 然后跳了一次就找到了flag。
